@@ -1,404 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/fav-icon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/fav-icon/favicon-16x16.png">
-		<link rel="manifest" href="img/fav-icon/site.webmanifest">
-<!-- fontawesome -->
-<script src="https://kit.fontawesome.com/46a05c488f.js" crossorigin="anonymous"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/fav-icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/fav-icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/fav-icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/fav-icon/site.webmanifest" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/46a05c488f.js"
+      crossorigin="anonymous"
+    ></script>
 
-		<!-- bootstrap -->
-     
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
 
-</head>
-<body id="home">
-<!-- navbar -->
-
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-uppercase" href="index.html">Tech<span class="text-primary">edu</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-     
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <form class="d-flex w-100 px-5 mt-3 mt-md-0">
-          <input class="form-control me-2" type="search" placeholder="Search...." aria-label="Search" required>
-          <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
-        </form>
-
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-md-start">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>    
-          <li class="nav-item">
-            <a class="nav-link" href="#project-categories">Project</a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li> 
-        </ul>
-        
-      </div>
-    </div>
-  </nav>
-  <!-- End navbar -->
-  <!-- start showcase -->
-<header id="showcase">
-  <div class="dark-overlay">
-    <div class="showcase-info">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="home">
+    <!-- navbar -->
+    <footer id="main-footer" class="text-dark py-1">
       <div class="container">
-        <div class="row">
-          <div class="col-md-10">
+        <div class="row gy-2">
+          <div class="col-md 6 text-center text-md-start">
+         <button>Connect Us
             
-            <p class="lead text-uppercase">Welcome tp techedu</p>
-            <h1>the place where you can find projects with their tearms</h1>
-            <hr class="hr-primary"/>
           </div>
-          <div class="row ">
-               <div class="col-md-6">
-                 <div class="row gy-2">
-                     <div class="col-md-6">        
-                   <div class="d-grid">
-                      <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#signinModal">
-                        Sign in
-                      </button></div></div>
-                     <div class="col-md-6">   
-                      <div class="d-grid">       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">
-                        Sign up
-                      </button></div></div>
-                 </div>
-               </div>
+          <div class="col-md 6 text-center text-md-end">
+            <a href="https://www.facebook.com/"
+              ><i class="fa fa-facebook mx-2"></i
+            ></a>
+            <a href="https://github.com/mohamed3ali"
+              ><i class="fa fa-github mx-2"></i
+            ></a>
+            <a href="https://www.linkedin.com/feed/"
+              ><i class="fa fa-linkedin mx-2"></i
+            ></a>
+            <a href="#"><i class="fa fa-instagram mx-2"></i></a>
           </div>
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content bg-secondary text-modal-dark border rounded">
-      <div class="modal-header">
-        <h3 class="modal-title text-center w-100 fw-bold" id="exampleModalLabel">tech<span class="text-primary">edu</span></h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-    <hr class="hr-secondary m-auto" /> 
-    <p class="py-3 lead fw-bold text-center">Welcome Back...</p>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <input type="text" placeholder="Username or Email" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <input type="password" placeholder="Password"  class="form-control" required>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-          </div>
-          <div class="d-grid">
-          <button type="submit" class="btn btn-dark rounded-pill border-0">Sign in</button>
         </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content bg-secondary text-modal-dark border rounded">
-      <div class="modal-header">
-        <h3 class="modal-title text-center w-100 fw-bold" id="exampleModalLabel">tech<span class="text-primary">edu</span></h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-    <hr class="hr-secondary m-auto" /> 
-    <p class="py-3 lead fw-bold text-center">To be connected with us, please register to our website..!</p>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <input type="text" placeholder="Username" class="form-control" required>
+        <div class="row text-center border-top">
+          <div class="container">
+            <h6>+200-015550750983 | modali@gmail.com</h6>
           </div>
-          <div class="mb-3">
-            <input type="email" placeholder="Email" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <input type="password" placeholder="Password"  class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <input type="password" placeholder="confirm Password"  class="form-control" required>
-          </div>
-        
-          <div class="d-grid">
-          <button type="submit" class="btn btn-dark rounded-pill border-0">Sign up</button>
-        </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
+    </footer>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html"
+          >Tech<span class="text-primary">edu</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-md-start">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#project-categories">Buy New</a>
+            </li>
+          </ul>
+
+          <form class="d-flex w-50 px-5 mt-3 mt-md-0">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search...."
+              aria-label="Search"
+              required
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- start showcase -->
+    <header id="showcase">
+      <div class="dark-overlay">
+        <div class="showcase-info">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mb-4">
+                <p class="lead text-uppercase">Welcome tp techedu</p>
+                <h1>the place where you can find projects with their tearms</h1>
+                <hr class="hr-primary" />
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row gy-2">
+                    <div class="col-md-6">
+                      <div class="d-grid">
+                        <button
+                          type="button"
+                          class="btn btn-light btn-lg"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signinModal"
+                        >
+                          Sign in
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-grid">
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-outline-light btn-lg"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signupModal"
+                        >
+                          Sign up
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="signinModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div
+                    class="modal-content bg-secondary text-modal-dark border rounded"
+                  >
+                    <div class="modal-header">
+                      <h3
+                        class="modal-title text-center w-100 fw-bold"
+                        id="exampleModalLabel"
+                      >
+                        tech<span class="text-primary">edu</span>
+                      </h3>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <hr class="hr-secondary m-auto" />
+                    <p class="py-3 lead fw-bold text-center">Welcome Back...</p>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            placeholder="Username or Email"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="password"
+                            placeholder="Password"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+                          <label class="form-check-label" for="exampleCheck1"
+                            >Remember Me</label
+                          >
+                        </div>
+                        <div class="d-grid">
+                          <button
+                            type="submit"
+                            class="btn btn-dark rounded-pill border-0"
+                          >
+                            Sign in
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="signupModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div
+                    class="modal-content bg-secondary text-modal-dark border rounded"
+                  >
+                    <div class="modal-header">
+                      <h3
+                        class="modal-title text-center w-100 fw-bold"
+                        id="exampleModalLabel"
+                      >
+                        tech<span class="text-primary">edu</span>
+                      </h3>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <hr class="hr-secondary m-auto" />
+                    <p class="py-3 lead fw-bold text-center">
+                      To be connected with us, please register to our website..!
+                    </p>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            placeholder="Username"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="email"
+                            placeholder="Email"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="password"
+                            placeholder="Password"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="password"
+                            placeholder="confirm Password"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+
+                        <div class="d-grid">
+                          <button
+                            type="submit"
+                            class="btn btn-dark rounded-pill border-0"
+                          >
+                            Sign up
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- End showcase -->
-<!-- Newsletter Section -->
-<section id="newsletter" class="bg-primary py-4 text-center">
-    <div class="container">
-      <h2>Get Notified of new projects</h2>
-      <form>
-      <div class="row my-3 gy-2"> 
-         <div class="col-md-4">
-           <input class="form-control form-control-lg" type="text" name="name" placeholder="Name" required/>
-         </div>
-         <div class="col-md-4">
-          <input class="form-control form-control-lg " type="email" name="email" placeholder="email" required/>
-
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="bg-primary py-4 text-center">
+      <div class="container">
+        <h2>Get Notified of new projects</h2>
+        <form>
+          <div class="row my-3 gy-2">
+            <div class="col-md-4">
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="col-md-4">
+              <input
+                class="form-control form-control-lg"
+                type="email"
+                name="email"
+                placeholder="email"
+                required
+              />
+            </div>
+            <div class="col-md-4 d-grid">
+              <button class="btn btn-dark btn-lg" type="submit">
+                <i class="fas fa-envelope"></i> Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+        <h6 class="fst-italic">Your email address will never be shared</h6>
+      </div>
+    </section>
+    <!-- About Section  -->
+    <section id="about" class="bg-secondary text-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>ABOUT US</h2>
+            <hr class="hr-primary m-auto my-3" />
+          </div>
         </div>
-        <div class="col-md-4 d-grid">
-     <button class="btn btn-dark btn-lg " type="submit"><i class="fas fa-envelope"></i> Subscribe</button>
+        <div class="row align-items-center gy-3">
+       
+
+          <div class="col-md-6">
+            <p class="fw-bold">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Blanditiis assumenda nam impedit. Sunt quae nostrum obcaecati
+              animi, dignissimos minima est fugit recusandae! Nulla qui eveniet
+              illo, minima voluptatem provident exercitationem.
+            </p>
+
+            <p>
+              Blanditiis assumenda nam impedit. Sunt quae nostrum obcaecati
+              animi, dignissimos minima est fugit recusandae! Nulla qui eveniet
+              illo, minima voluptatem provident exercitationem.
+            </p>
+            <div class="d-flex">
+              <div class="p-4"><i class="fas fa-check fa-2x"></i></div>
+              <div class="p-4">
+                <p>
+                  Lorem ipsum dolor sit dignissimos minima est fugit recusandae!
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4"><i class="fas fa-check fa-2x"></i></div>
+              <div class="p-4">
+                <p>
+                  Nulla qui eveniet illo, minima voluptatem provident
+                  exercitationem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="img-fluid rounded-circle"
+              src="img/team.jpg"
+              alt="techedu team"
+            />
+          </div>
         </div>
       </div>
-    </form>
-    <h6 class="fst-italic">Your email address will never be shared</h6>
-    </div>
-</section>
-<!-- About Section  -->
-<section id="about" class="bg-secondary text-dark py-4">
-<div class="container">
-  <div class="row">
-    <div class="col text-center">
-    <h2>Who we Are</h2>
-    <hr class="hr-primary m-auto my-3"/>
-    <p>404Error are te creator of TechEdu</p> 
-  </div>
-</div>
-<div class="row align-items-center gy-3">
-<div class="col-md-6">
-  <img class="img-fluid rounded-circle" src="img/team.jpg" alt="techedu team">
-</div>
+    </section>
 
-<div class="col-md-6">
-  <p class="fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis assumenda nam impedit. Sunt quae nostrum obcaecati animi, dignissimos minima est fugit recusandae! Nulla qui eveniet illo, minima voluptatem provident exercitationem.</p>
- 
-  <p>Blanditiis assumenda nam impedit. Sunt quae nostrum obcaecati animi, dignissimos minima est fugit recusandae! Nulla qui eveniet illo, minima voluptatem provident exercitationem.</p>
-   <div class="d-flex">
-     <div class="p-4"><i class="fas fa-check fa-2x"></i></div>
-     <div class="p-4">
-       <p>Lorem ipsum dolor sit dignissimos minima est fugit recusandae! </p>
-     </div>
-   </div>
-
-   <div class="d-flex">
-    <div class="p-4"><i class="fas fa-check fa-2x"></i></div>
-    <div class="p-4">
-      <p>Nulla qui eveniet illo, minima voluptatem provident exercitationem! </p>
-    </div>
-  </div>
-
-</div>
-</div>
-</div>
-</section>
-
-<!-- Project categories -->
-<section id="project-categories" class="py-4">
-    <div class="container">
-      <div class="row text-center">
+    <!-- Project categories -->
+    <section id="project-categories" class="py-4">
+      <div class="container">
+        <div class="row text-center">
           <div class="col">
-            <h2>Project Categories</h2>
-            <p>Form text below inputs can be styled with .form-text. If a block-level element will be used, a top margin is added for easy spacing from the inputs above.</p>
-            <hr class="hr-primary m-auto my-3"/>
+            <h2>OUR SERVICES</h2>
+            <hr class="hr-primary m-auto my-3" />
           </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Html5_Projects.jpg"
+                class="card-img-top"
+                alt="Html"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">HTML5/CSS3</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Javascript_Projects.jpg"
+                class="card-img-top"
+                alt="Javascript"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">JAVASCRIPT</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Bootstrap_Projects.jpg"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">BOOTSTRAP</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/IOS_Projects.jpg"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">IOS</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Android_Projects.png"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">ANDROID</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Flutter_Projects.jpg"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">FLUTTER</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Angular_Projects.png"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">ANGULAR</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/React_Projects.jpg"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">REACT</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <img
+                src="img/Sass_Projects.jpg"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body bg-secondary text-center text-dark">
+                <h5 class="card-title">SASS</h5>
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-dark">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row gy-3 ">
-        <div class="col-md-4 text-center">
-          <div class="card">
-            <img src="img/Html5_Projects.jpg" class="card-img-top" alt="Html">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">HTML5/CSS3</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
+    </section>
 
-        <div class="col-md-4 text-center">
-          <div class="card">
-            <img src="img/Javascript_Projects.jpg" class="card-img-top" alt="Javascript">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">JAVASCRIPT</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card">
-            <img src="img/Bootstrap_Projects.jpg" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">BOOTSTRAP</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card">
-            <img src="img/IOS_Projects.jpg" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">IOS</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card" >
-            <img src="img/Android_Projects.png" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">ANDROID</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card" >
-            <img src="img/Flutter_Projects.jpg" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">FLUTTER</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card" >
-            <img src="img/Angular_Projects.png" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">ANGULAR</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card">
-            <img src="img/React_Projects.jpg" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">REACT</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <div class="card">
-            <img src="img/Sass_Projects.jpg" class="card-img-top" alt="Bootstrap">
-            <div class="card-body bg-secondary text-center text-dark">
-              <h5 class="card-title">SASS</h5>
-              <div class="d-grid">
-              <a href="#" class="btn btn-outline-dark">View</a>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<!-- follow-us -->
-  <section id="follow-us" class="bg-primary py-4 text-center">
-   <div class="container">
-     <div class="row text-center">
-       <h2 class="mb-4">Follow us</h2>
-       <div class="col-md-4 m-auto">
-           <div class="row">
-             <div class="col">
-               <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
-             </div>
-             <div class="col">
-              <a href="https://github.com/mohamed3ali"><i class="fa fa-github fa-2x"></i></a>
-            </div>
-            <div class="col">
-              <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin fa-2x"></i></a>
-            </div>
-            <div class="col">
-              <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-            </div>
-           </div>
-       </div>
-     </div>
-   </div>
-  </section>
-  <!-- contact -->
-  
-  <section id="contact" class="text-center py-4 text-dark">
-   <div class="container">
-    <h2>@ Email:Support@techedu.com</h2>
-  <hr class="hr-primary m-auto my-3"/>
-  
-  <p>If you're interested in sponsoring TECHEDU, Please email us for pricing and terms</p>
-</div>  
-</section>
-<!-- footer  -->
-<footer id="main-footer" class="text-dark py-4">
-  <div class="container">
-    <div class="row gy-2">
-      <div class="col-md 6 text-center text-md-start">
- <a class="fw-bold text-uppercase" href="index.html">tech<span class="text-primary">edu</span></a>
-  </div>
-  <div class="col-md 6 text-center text-md-end">
-    <a href="https://www.facebook.com/"><i class="fa fa-facebook mx-2"></i></a>
-    <a href="https://github.com/mohamed3ali"><i class="fa fa-github mx-2"></i></a>
-    <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin mx-2"></i></a>
-    <a href="#"><i class="fa fa-instagram mx-2"></i></a>
-  </div>
-  </div>
-  <div class="row text-center border-top">
-    <div class="container">
-      <h6>&copy; 2021 TECHEDU,ALL RIGHT RESERVED</h6>
-    </div>
-  </div>
-  </div>
-</footer>
-    <!-- bootstrap js -->
     <script sre="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <script>
-      
-  </script>
-</body>
+    <script></script>
+  </body>
 </html>
